@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F161B3FA2033E7BD001A8154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F161B3F92033E7BD001A8154 /* AppDelegate.swift */; };
+		F161B3FC2033E7BD001A8154 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F161B3FB2033E7BD001A8154 /* ViewController.swift */; };
+		F161B3FF2033E7BD001A8154 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F161B3FD2033E7BD001A8154 /* Main.storyboard */; };
+		F161B4012033E7BD001A8154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F161B4002033E7BD001A8154 /* Assets.xcassets */; };
+		F161B4042033E7BD001A8154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F161B4022033E7BD001A8154 /* LaunchScreen.storyboard */; };
+		F161B4092033E7BD001A8154 /* AWcalculadoraIMC WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F161B4082033E7BD001A8154 /* AWcalculadoraIMC WatchKit App.app */; };
+		F161B40F2033E7BD001A8154 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F161B40D2033E7BD001A8154 /* Interface.storyboard */; };
+		F161B4112033E7BD001A8154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F161B4102033E7BD001A8154 /* Assets.xcassets */; };
+		F161B4182033E7BD001A8154 /* AWcalculadoraIMC WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F161B4172033E7BD001A8154 /* AWcalculadoraIMC WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F161B41D2033E7BD001A8154 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F161B41C2033E7BD001A8154 /* InterfaceController.swift */; };
+		F161B41F2033E7BD001A8154 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F161B41E2033E7BD001A8154 /* ExtensionDelegate.swift */; };
+		F161B4212033E7BD001A8154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F161B4202033E7BD001A8154 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F161B40A2033E7BD001A8154 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F161B3EE2033E7BC001A8154 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F161B4072033E7BD001A8154;
+			remoteInfo = "AWcalculadoraIMC WatchKit App";
+		};
+		F161B4192033E7BD001A8154 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F161B3EE2033E7BC001A8154 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F161B4162033E7BD001A8154;
+			remoteInfo = "AWcalculadoraIMC WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F161B4282033E7BD001A8154 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F161B4182033E7BD001A8154 /* AWcalculadoraIMC WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F161B42C2033E7BD001A8154 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F161B4092033E7BD001A8154 /* AWcalculadoraIMC WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F161B3F62033E7BD001A8154 /* AWcalculadoraIMC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWcalculadoraIMC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F161B3F92033E7BD001A8154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F161B3FB2033E7BD001A8154 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F161B3FE2033E7BD001A8154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F161B4002033E7BD001A8154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F161B4032033E7BD001A8154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F161B4052033E7BD001A8154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F161B4082033E7BD001A8154 /* AWcalculadoraIMC WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AWcalculadoraIMC WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F161B40E2033E7BD001A8154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F161B4102033E7BD001A8154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F161B4122033E7BD001A8154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F161B4172033E7BD001A8154 /* AWcalculadoraIMC WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AWcalculadoraIMC WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F161B41C2033E7BD001A8154 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F161B41E2033E7BD001A8154 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F161B4202033E7BD001A8154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F161B4222033E7BD001A8154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F161B3F32033E7BD001A8154 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F161B4142033E7BD001A8154 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F161B3ED2033E7BC001A8154 = {
+			isa = PBXGroup;
+			children = (
+				F161B3F82033E7BD001A8154 /* AWcalculadoraIMC */,
+				F161B40C2033E7BD001A8154 /* AWcalculadoraIMC WatchKit App */,
+				F161B41B2033E7BD001A8154 /* AWcalculadoraIMC WatchKit Extension */,
+				F161B3F72033E7BD001A8154 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F161B3F72033E7BD001A8154 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F161B3F62033E7BD001A8154 /* AWcalculadoraIMC.app */,
+				F161B4082033E7BD001A8154 /* AWcalculadoraIMC WatchKit App.app */,
+				F161B4172033E7BD001A8154 /* AWcalculadoraIMC WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F161B3F82033E7BD001A8154 /* AWcalculadoraIMC */ = {
+			isa = PBXGroup;
+			children = (
+				F161B3F92033E7BD001A8154 /* AppDelegate.swift */,
+				F161B3FB2033E7BD001A8154 /* ViewController.swift */,
+				F161B3FD2033E7BD001A8154 /* Main.storyboard */,
+				F161B4002033E7BD001A8154 /* Assets.xcassets */,
+				F161B4022033E7BD001A8154 /* LaunchScreen.storyboard */,
+				F161B4052033E7BD001A8154 /* Info.plist */,
+			);
+			path = AWcalculadoraIMC;
+			sourceTree = "<group>";
+		};
+		F161B40C2033E7BD001A8154 /* AWcalculadoraIMC WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F161B40D2033E7BD001A8154 /* Interface.storyboard */,
+				F161B4102033E7BD001A8154 /* Assets.xcassets */,
+				F161B4122033E7BD001A8154 /* Info.plist */,
+			);
+			path = "AWcalculadoraIMC WatchKit App";
+			sourceTree = "<group>";
+		};
+		F161B41B2033E7BD001A8154 /* AWcalculadoraIMC WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F161B41C2033E7BD001A8154 /* InterfaceController.swift */,
+				F161B41E2033E7BD001A8154 /* ExtensionDelegate.swift */,
+				F161B4202033E7BD001A8154 /* Assets.xcassets */,
+				F161B4222033E7BD001A8154 /* Info.plist */,
+			);
+			path = "AWcalculadoraIMC WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F161B3F52033E7BD001A8154 /* AWcalculadoraIMC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F161B42D2033E7BD001A8154 /* Build configuration list for PBXNativeTarget "AWcalculadoraIMC" */;
+			buildPhases = (
+				F161B3F22033E7BD001A8154 /* Sources */,
+				F161B3F32033E7BD001A8154 /* Frameworks */,
+				F161B3F42033E7BD001A8154 /* Resources */,
+				F161B42C2033E7BD001A8154 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F161B40B2033E7BD001A8154 /* PBXTargetDependency */,
+			);
+			name = AWcalculadoraIMC;
+			productName = AWcalculadoraIMC;
+			productReference = F161B3F62033E7BD001A8154 /* AWcalculadoraIMC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F161B4072033E7BD001A8154 /* AWcalculadoraIMC WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F161B4292033E7BD001A8154 /* Build configuration list for PBXNativeTarget "AWcalculadoraIMC WatchKit App" */;
+			buildPhases = (
+				F161B4062033E7BD001A8154 /* Resources */,
+				F161B4282033E7BD001A8154 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F161B41A2033E7BD001A8154 /* PBXTargetDependency */,
+			);
+			name = "AWcalculadoraIMC WatchKit App";
+			productName = "AWcalculadoraIMC WatchKit App";
+			productReference = F161B4082033E7BD001A8154 /* AWcalculadoraIMC WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F161B4162033E7BD001A8154 /* AWcalculadoraIMC WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F161B4252033E7BD001A8154 /* Build configuration list for PBXNativeTarget "AWcalculadoraIMC WatchKit Extension" */;
+			buildPhases = (
+				F161B4132033E7BD001A8154 /* Sources */,
+				F161B4142033E7BD001A8154 /* Frameworks */,
+				F161B4152033E7BD001A8154 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AWcalculadoraIMC WatchKit Extension";
+			productName = "AWcalculadoraIMC WatchKit Extension";
+			productReference = F161B4172033E7BD001A8154 /* AWcalculadoraIMC WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F161B3EE2033E7BC001A8154 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = user909043;
+				TargetAttributes = {
+					F161B3F52033E7BD001A8154 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					F161B4072033E7BD001A8154 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					F161B4162033E7BD001A8154 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F161B3F12033E7BC001A8154 /* Build configuration list for PBXProject "AWcalculadoraIMC" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F161B3ED2033E7BC001A8154;
+			productRefGroup = F161B3F72033E7BD001A8154 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F161B3F52033E7BD001A8154 /* AWcalculadoraIMC */,
+				F161B4072033E7BD001A8154 /* AWcalculadoraIMC WatchKit App */,
+				F161B4162033E7BD001A8154 /* AWcalculadoraIMC WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F161B3F42033E7BD001A8154 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F161B4042033E7BD001A8154 /* LaunchScreen.storyboard in Resources */,
+				F161B4012033E7BD001A8154 /* Assets.xcassets in Resources */,
+				F161B3FF2033E7BD001A8154 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F161B4062033E7BD001A8154 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F161B4112033E7BD001A8154 /* Assets.xcassets in Resources */,
+				F161B40F2033E7BD001A8154 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F161B4152033E7BD001A8154 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F161B4212033E7BD001A8154 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F161B3F22033E7BD001A8154 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F161B3FC2033E7BD001A8154 /* ViewController.swift in Sources */,
+				F161B3FA2033E7BD001A8154 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F161B4132033E7BD001A8154 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F161B41F2033E7BD001A8154 /* ExtensionDelegate.swift in Sources */,
+				F161B41D2033E7BD001A8154 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F161B40B2033E7BD001A8154 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F161B4072033E7BD001A8154 /* AWcalculadoraIMC WatchKit App */;
+			targetProxy = F161B40A2033E7BD001A8154 /* PBXContainerItemProxy */;
+		};
+		F161B41A2033E7BD001A8154 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F161B4162033E7BD001A8154 /* AWcalculadoraIMC WatchKit Extension */;
+			targetProxy = F161B4192033E7BD001A8154 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F161B3FD2033E7BD001A8154 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F161B3FE2033E7BD001A8154 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F161B4022033E7BD001A8154 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F161B4032033E7BD001A8154 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F161B40D2033E7BD001A8154 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F161B40E2033E7BD001A8154 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F161B4232033E7BD001A8154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F161B4242033E7BD001A8154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F161B4262033E7BD001A8154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 335V5UBMVB;
+				INFOPLIST_FILE = "AWcalculadoraIMC WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ITESM.AWcalculadoraIMC.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		F161B4272033E7BD001A8154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 335V5UBMVB;
+				INFOPLIST_FILE = "AWcalculadoraIMC WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ITESM.AWcalculadoraIMC.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		F161B42A2033E7BD001A8154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 335V5UBMVB;
+				IBSC_MODULE = AWcalculadoraIMC_WatchKit_Extension;
+				INFOPLIST_FILE = "AWcalculadoraIMC WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = ITESM.AWcalculadoraIMC.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		F161B42B2033E7BD001A8154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 335V5UBMVB;
+				IBSC_MODULE = AWcalculadoraIMC_WatchKit_Extension;
+				INFOPLIST_FILE = "AWcalculadoraIMC WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = ITESM.AWcalculadoraIMC.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		F161B42E2033E7BD001A8154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 335V5UBMVB;
+				INFOPLIST_FILE = AWcalculadoraIMC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ITESM.AWcalculadoraIMC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F161B42F2033E7BD001A8154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 335V5UBMVB;
+				INFOPLIST_FILE = AWcalculadoraIMC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ITESM.AWcalculadoraIMC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F161B3F12033E7BC001A8154 /* Build configuration list for PBXProject "AWcalculadoraIMC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F161B4232033E7BD001A8154 /* Debug */,
+				F161B4242033E7BD001A8154 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F161B4252033E7BD001A8154 /* Build configuration list for PBXNativeTarget "AWcalculadoraIMC WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F161B4262033E7BD001A8154 /* Debug */,
+				F161B4272033E7BD001A8154 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F161B4292033E7BD001A8154 /* Build configuration list for PBXNativeTarget "AWcalculadoraIMC WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F161B42A2033E7BD001A8154 /* Debug */,
+				F161B42B2033E7BD001A8154 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F161B42D2033E7BD001A8154 /* Build configuration list for PBXNativeTarget "AWcalculadoraIMC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F161B42E2033E7BD001A8154 /* Debug */,
+				F161B42F2033E7BD001A8154 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F161B3EE2033E7BC001A8154 /* Project object */;
+}
