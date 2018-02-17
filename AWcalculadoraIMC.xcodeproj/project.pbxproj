@@ -19,6 +19,8 @@
 		F161B41D2033E7BD001A8154 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F161B41C2033E7BD001A8154 /* InterfaceController.swift */; };
 		F161B41F2033E7BD001A8154 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F161B41E2033E7BD001A8154 /* ExtensionDelegate.swift */; };
 		F161B4212033E7BD001A8154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F161B4202033E7BD001A8154 /* Assets.xcassets */; };
+		F1B265692037D32A0083C32A /* Valor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B265682037D32A0083C32A /* Valor.swift */; };
+		F1B2656D2037D6AC0083C32A /* vistaDetalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B2656C2037D6AC0083C32A /* vistaDetalle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		F161B41E2033E7BD001A8154 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		F161B4202033E7BD001A8154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F161B4222033E7BD001A8154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1B265682037D32A0083C32A /* Valor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Valor.swift; sourceTree = "<group>"; };
+		F1B2656C2037D6AC0083C32A /* vistaDetalle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vistaDetalle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,8 @@
 				F161B41E2033E7BD001A8154 /* ExtensionDelegate.swift */,
 				F161B4202033E7BD001A8154 /* Assets.xcassets */,
 				F161B4222033E7BD001A8154 /* Info.plist */,
+				F1B265682037D32A0083C32A /* Valor.swift */,
+				F1B2656C2037D6AC0083C32A /* vistaDetalle.swift */,
 			);
 			path = "AWcalculadoraIMC WatchKit Extension";
 			sourceTree = "<group>";
@@ -298,8 +304,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1B265692037D32A0083C32A /* Valor.swift in Sources */,
 				F161B41F2033E7BD001A8154 /* ExtensionDelegate.swift in Sources */,
 				F161B41D2033E7BD001A8154 /* InterfaceController.swift in Sources */,
+				F1B2656D2037D6AC0083C32A /* vistaDetalle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

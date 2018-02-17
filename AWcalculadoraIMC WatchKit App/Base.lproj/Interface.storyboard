@@ -1,15 +1,82 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="AWcalculadoraIMC_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="HkL-U4-TgR">
+                            <items>
+                                <label width="69" alignment="left" text="Peso" textAlignment="center" id="ApU-HM-crQ">
+                                    <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                                <label width="63" alignment="left" text="50" textAlignment="center" id="24V-x8-JIK">
+                                    <color key="textColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <slider width="1" alignment="left" value="50" minimum="50" maximum="200" steps="150" id="GPV-7b-r7z">
+                            <connections>
+                                <action selector="nuevoValorPeso:" destination="AgC-eL-Hgc" id="wSa-DU-H1f"/>
+                            </connections>
+                        </slider>
+                        <group width="1" alignment="left" id="hcH-ri-bLm">
+                            <items>
+                                <label width="70" alignment="left" text="Estatura" textAlignment="center" id="CnB-nV-JBb">
+                                    <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                                <label width="66" alignment="left" text=".50" textAlignment="center" id="RU6-b2-Bvz">
+                                    <color key="textColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <slider width="1" alignment="left" value="50" minimum="50" maximum="230" steps="180" id="Ej4-nA-6LJ">
+                            <connections>
+                                <action selector="nuevoValorEstatura:" destination="AgC-eL-Hgc" id="Icr-Zu-Xna"/>
+                            </connections>
+                        </slider>
+                        <button width="1" alignment="left" title="Calcular" id="BQ6-uz-GKv">
+                            <color key="titleColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="accionCalcular" destination="AgC-eL-Hgc" id="xc2-n5-9El"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="valorEstatura" destination="RU6-b2-Bvz" id="5GD-sd-Ehb"/>
+                        <outlet property="valorPeso" destination="24V-x8-JIK" id="wXd-Iu-UF8"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="-756" y="-1329"/>
+        </scene>
+        <!--identificadorValor-->
+        <scene sceneID="309-sy-4by">
+            <objects>
+                <controller identifier="identificadorValor" id="Pt5-sY-i2p" customClass="vistaDetalle" customModule="AWcalculadoraIMC_WatchKit_Extension">
+                    <items>
+                        <label width="136" alignment="left" text="RESULTADO IMC" textAlignment="center" id="UGg-cv-L4o">
+                            <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <label width="133" alignment="left" text="0" textAlignment="center" id="97x-gb-5ii">
+                            <color key="textColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="etiquetaResultado" destination="97x-gb-5ii" id="n2w-OM-bDY"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-766" y="-945"/>
         </scene>
     </scenes>
 </document>
